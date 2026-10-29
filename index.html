@@ -87,7 +87,7 @@
   @media (prefers-reduced-motion: reduce) { .fx:hover { transform: none; } }
 
   /* Hero */
-  .hero { position: relative; padding: 5rem 0 4.5rem; }
+  .hero { position: relative; padding: 4.5rem 0 2.5rem; }
   .hero-grid { position: relative; display: grid; grid-template-columns: 1fr 320px; gap: 4rem; align-items: center; }
   .badge { display: inline-flex; align-items: center; gap: .55rem; padding: .4rem .9rem .4rem .6rem; border-radius: 999px; background: var(--blue-soft); border: 1px solid var(--line-strong); font-size: .875rem; color: var(--soft); margin-bottom: 1.4rem; }
   .badge .dot { width: 8px; height: 8px; border-radius: 50%; background: #34D399; box-shadow: 0 0 0 4px rgba(52,211,153,.18); }
@@ -124,8 +124,9 @@
   @media (max-width: 480px) { .hero h1 { font-size: 2.05rem; flex-wrap: nowrap; gap: .4em; } .pmp-tag { font-size: .42em; } .float-chip { padding: .5rem .7rem; } }
 
   /* Sections */
-  section.block { padding: 5.5rem 0; }
-  .sec-head { margin-bottom: 2.75rem; max-width: 680px; }
+  section.block { padding: 3.25rem 0; }
+  @media (max-width: 800px) { section.block { padding: 2.5rem 0; } }
+  .sec-head { margin-bottom: 2rem; max-width: 680px; }
   .sec-head .kicker { display: inline-flex; align-items: center; gap: .6rem; color: var(--link); font-weight: 600; font-size: .95rem; margin-bottom: .6rem; }
   .sec-head .kicker::before { content: ""; width: 28px; height: 2px; border-radius: 2px; background: var(--grad); }
   .sec-head h2 { font-family: var(--display); font-weight: 800; font-size: clamp(1.9rem, 4vw, 2.7rem); letter-spacing: -0.025em; line-height: 1.1; margin: 0; }
